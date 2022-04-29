@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-
-
 public class RegistrationForm {
 	private String name;
 	private String dateOfBirth;
@@ -11,6 +9,7 @@ public class RegistrationForm {
 	private String zipcode;
 	private String country;
 	private String phoneNumber;
+	private String email;
 	private String bloodType;
 		
 // Default Constructor	
@@ -23,11 +22,12 @@ public RegistrationForm (){
 		zipcode = null;
 		country = null;
 		phoneNumber = null;
+		email = null;
 		bloodType = null;
 	}
 
 // Constructor that takes in name, date of birth, address number, street name, gender, and phone number	
-public RegistrationForm(String n, String d, String s, String c, String st, String z, String co, String p, String b) {
+public RegistrationForm(String n, String d, String s, String c, String st, String z, String co, String p, String e, String b) {
 		name = n;
 		dateOfBirth = d;
 		streetNumberAndName = s;
@@ -36,6 +36,7 @@ public RegistrationForm(String n, String d, String s, String c, String st, Strin
 		zipcode = z;
 		country = co;
 		phoneNumber = p;
+		email = e;
 		bloodType = b;
 				
 	}
@@ -73,6 +74,10 @@ public String getPhoneNumber() {
 	return phoneNumber;
 }
 
+public String getEmail() {
+	return email;
+}
+
 public String getBloodType() {
 	return bloodType;
 }
@@ -93,7 +98,8 @@ public String toString() {
 		}
 		countryCount += 9;
 		
-	return "Name: " + name + "\nAddress: " + streetNumberAndName + String.format("\n%" + cityCount + "s" , city)  + ", " + state + " " + zipcode + String.format("\n%" + countryCount + "s" , country) + "\nPhone Number: " + phoneNumber + "\nBlood Type: " + bloodType;
+	return "Name: " + name + "\nAddress: " + streetNumberAndName + String.format("\n%" + cityCount + "s" , city)  + ", " + state + " " + 
+			zipcode + String.format("\n%" + countryCount + "s" , country) + "\nPhone Number: " + phoneNumber + "\nEmail:" + email + "\nBlood Type: " + bloodType;
 }
 
 public static void main (String [] args) {
@@ -105,6 +111,7 @@ public static void main (String [] args) {
 	String userZipcode;
 	String userCountry;
 	String userPhoneNumber;
+	String userEmail;
 	String userBloodType;
 	
 	// Create Scanner object
@@ -142,11 +149,15 @@ public static void main (String [] args) {
 	System.out.println("What is your phone number (enter in the formmat ***-***-****)?");
 	userPhoneNumber = scnr.nextLine();
 	
+	// Get user email
+		System.out.println("What is your email?");
+		userEmail = scnr.nextLine();
+	
 	// Get user blood type
 	System.out.println("What is your Blood Type?");
 	userBloodType = scnr.nextLine();
 	
-	RegistrationForm mine = new RegistrationForm (userName, userDateOfBirth, userStreetNumberAndName, userCity, userState, userZipcode, userCountry, userPhoneNumber, userBloodType);
+	RegistrationForm mine = new RegistrationForm (userName, userDateOfBirth, userStreetNumberAndName, userCity, userState, userZipcode, userCountry, userPhoneNumber, userEmail, userBloodType);
 	
 	System.out.println(mine);
 	
