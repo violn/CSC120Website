@@ -1,4 +1,46 @@
-h1
-{
-    color: #FF0000;
+h1{
+  color:white;
+  font-size:40px
+
+}
+
+body{
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom right, purple, orange);
+  padding-bottom: 20px
+}
+
+.container{
+    width:95%;
+    margin:auto;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.reg-form input[type="submit"]{
+  background-color:white;
+  font-size: 24px;
+  font-weight: bold;
+  border:black;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: absolute;
+  left: 50%;
+
+}
+
+.reg-form .form-group{
+  padding-bottom:15px
+}
+
+.reg-form label{
+  display:block;
+}
+
+.reg-form input[type="text"]{
+  padding: 8px;
+  width:80%;
 }
