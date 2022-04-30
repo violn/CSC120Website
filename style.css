@@ -4,7 +4,7 @@ h1{
 }
 
 .container h1{
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   border-bottom: 3px solid black;
   width:95%;
 }
@@ -24,7 +24,13 @@ body{
     margin:auto;
     font-size: 24px;
     font-weight: bold;
-    padding-bottom: 500px;
+    padding-top: 120px;
+    padding-bottom: 250px;
+  }
+
+.reg-form{
+  padding-top: 50px;
+   padding-left: 240px;
   }
 
 .reg-form input[type="submit"]{
@@ -37,7 +43,7 @@ body{
   padding-left: 10px;
   padding-right: 10px;
   position: absolute;
-  left: 40%;
+  left: 47%;
 }
 
 .reg-form .form-group{
