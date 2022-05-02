@@ -3,6 +3,15 @@ h1{
   font-size:40px
 }
 
+html{
+  height: 100%;
+  background-image: linear-gradient(to bottom right, purple, orange);
+}
+
+* {
+  font-family: "Veranda", sans-serif;
+}
+
 .container h1{
   padding-bottom: 20px;
   border-bottom: 3px solid black;
@@ -11,12 +20,6 @@ h1{
 
 .clr{
   clear: both;
-}
-
-body{
-  background-repeat: no-repeat;
-  background-image: linear-gradient(to bottom right, purple, orange);
-  padding-bottom: 145px;
 }
 
 .container{
@@ -71,5 +74,4 @@ body{
 .reg-form .sub-address{
   float: left;
   width: 44.5%;
-
 }
