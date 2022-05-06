@@ -69,3 +69,39 @@ html, body{
   font-size: 18px;
   font-weight: bold;
 }
+<<<<<<< HEAD
+
+.reg-form .sub-address{
+  float: left;
+  width: 44.5%;
+}
+
+body.nav{
+  margin: 0;
+}
+
+.topnav{
+background-color: #111111;
+overflow: hidden;
+}
+
+.topnav a{
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  text-decoration: none;
+  padding: 10px;
+  float: left;
+}
+
+.topnav a:hover{
+  background-color: white;
+  color: black;
+}
+
+.topnav a.active{
+  background-color: white;
+  color: black;
+}
+=======
+>>>>>>> 2a5dbfe50b7900530cf9082830ee66314c53c7cd
