@@ -1,25 +1,16 @@
 <!DOCTYPE html>
+<html>
+
 <head>
     <title>Registration Form</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/BloodDonorGroupWebsite/css/style.css">
 </head>
-
-<body class="nav">
-  <div class="topnav">
-  <nav>
-    <a href="homepage.html">Home</a>
-    <a class="active" href="registration.html">Registration</a>
-    <a href="contact.html">Contact Us</a>
-  </div>
-</body>
 
 <body>
   <div class="container">
     <h1>Blood Donor Registration Form</h1>
-      <form class="reg-form">
+
+      <form method= "post" action= "/RegistrationServ" class="reg-form">
 
         <div class="form-group">
           <label>Name: </label>
@@ -67,10 +58,10 @@
           <label>Blood Type: </label>
           <input type="text" name="blood type">
         </div>
-            
+
         <input class="button" type="submit" value="Submit" name="">
-        
-    </form>
-  </div>
+
+      </form>
+    </div>
 </body>
 </html>
